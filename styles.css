@@ -2,7 +2,52 @@
   text-align: center;
   font-family: arial, bold;
   color: rgb(249, 243, 223);
+	
 }
+body {
+	padding: 0;
+	margin: 0;
+	font-family: roboto;
+}
+#header, #footer {
+	background-color: #1f2937;
+	color: #f9faf8;
+}
+
+#header {
+	display: flex;
+	padding: 18px;
+	padding-right: 10%;
+	padding-left: 10%;
+	margin: 0;
+	border: 0;
+	gap: 8px;
+}
+
+.hero-header {
+	font-weight: bolder;
+	font-size: 24px;
+}
+
+.hero-secondary {
+	font-size: 18px;
+	color: #e5e7eb;
+}
+
+.small-items {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	padding: 5px;
+	padding-left: 50%;
+	padding-right: 0;
+}
+
+.hero {
+	font-family: extra-bold;
+	font-size: 48px;
+}
+
 /*body {
   background: url("https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg");
   background-repeat: no-repeat;
