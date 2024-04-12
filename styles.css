@@ -37,6 +37,7 @@ div {
 }
 
 #top {
+	justify-content: space-between;
 	padding-top: 55px;
 	padding-bottom: 55px;
 }
@@ -46,11 +47,20 @@ div {
 	flex-direction: column;
 	/*justify-content: space-between;*/
 	background-color: #f9faf8;
-	height: 450px;
+	height: 100%;
 	position: relative;
     z-index: 99;
 	padding-right: 20%;
 	padding-left: 20%;
+	padding-bottom: 5%;
+}
+
+#container-with-box {
+	background-color: #f9faf8;
+	height: auto;
+	position: relative;
+    z-index: 99;
+	padding: 95px 15%;
 }
 
 #quote {
@@ -61,7 +71,14 @@ div {
 	gap: 10px;
 }
 
-.hero-header .quote-auth{
+#footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 1% 0;
+}
+
+.hero-header {
 	font-weight: bolder;
 	font-size: 24px;
 }
@@ -158,7 +175,7 @@ img {
 	border-color: #3882f6;
 	border-radius: 10px;
 	width: 100%;
-	height: 100%;
+	height: 80%;
 }
 
 .img-descr {
@@ -168,19 +185,32 @@ img {
 
 .img-intern {
 	width: 100%;
-	height: 85%;
+	height: auto;
 }
 
 .quote-text {
 	font-size: 36px;
 	font-style: italic;
 	text-align: right;
-	color: 1f2937;
+	color: #1f2937;
 }
 
 .quote-auth {
 	text-align: right;
 	font-size: 36px;
+}
+
+.content-box {
+	border-style: solid;
+	border-color: #3882f6;
+	background-color: #3882f6;
+	border-radius: 10px;
+	width: 100%;
+	padding: 50px 5%;
+}
+
+#but2 {
+	border-color: #e5e7eb;
 }
 
 /*body {
