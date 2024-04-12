@@ -3,6 +3,12 @@ body {
 	margin: 0;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+div {
+	position: relative;
+    z-index: 99;
+}
+
 #header, #footer, #top, #middle {
 	background-color: #1f2937;
 	color: #f9faf8;
@@ -11,12 +17,23 @@ body {
 	padding-left: 10%;
 	margin: 0;
 	border: 0;
+	position: relative;
+    z-index: 99
 }
+
 
 #header {
 	padding-top: 18px;
 	padding-bottom: 18px;
-	justify-content: space-between
+	width: 80%;
+	justify-content: space-between;
+	position: fixed;
+    z-index: 999;
+}
+
+#filler-top {
+	padding-top: 18px;
+	padding-bottom: 18px;
 }
 
 #top {
@@ -25,7 +42,13 @@ body {
 }
 
 #middle {
-	background-color: ;
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between;*/
+	background-color: #f9faf8;
+	height: 500px;
+	position: relative;
+    z-index: 99
 }
 
 .hero-header {
@@ -38,8 +61,19 @@ body {
 	color: #e5e7eb;
 }
 
+.hero-secondary-but:visited {
+	color: #e5e7eb;
+	text-decoration: none;
+}
+
+.hero-secondary-but:link {
+	color: #e5e7eb;
+	text-decoration: none;
+}
+
 .hero-secondary-but:hover {
 	color: #3882f6;
+	text-decoration: none;
 }
 
 button:hover {
@@ -64,9 +98,22 @@ button:hover {
 	text-align: left;
 }
 
+.information {
+	font-weight: bolder;
+	font-size: 36px;
+	color: #1f2937;
+	text-align: center;
+	padding: 45px 0;
+}
+
 .hero {
 	font-family: extra-bold;
 	font-size: 48px;
+}
+
+.my-images {
+	display: flex;
+	direction: row;
 }
 
 button {
@@ -84,6 +131,28 @@ button {
 	margin: 0;
 	font-family: arial;
 }
+
+img {
+	width: 45%;
+	height: 45%;
+}
+
+.image-with-border {
+	border-style: solid;
+	border-color: #3882f6;
+	border-radius: 10px;
+}
+
+.my-images {
+	display: flex;
+	flex-direction: column;
+}
+
+.img-descr {
+	text-align: center;
+	color: #4b5563;
+}
+
 /*body {
   background: url("https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg");
   background-repeat: no-repeat;
