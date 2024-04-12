@@ -137,15 +137,18 @@ img {
 	height: 45%;
 }
 
+.my-images {
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+}
+
 .image-with-border {
 	border-style: solid;
 	border-color: #3882f6;
 	border-radius: 10px;
-}
-
-.my-images {
-	display: flex;
-	flex-direction: column;
+	width: 100%;
+	height: 100%;
 }
 
 .img-descr {
